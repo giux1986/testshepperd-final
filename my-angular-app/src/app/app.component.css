@@ -1,0 +1,57 @@
+/* app.component.css */
+
+/* Global styles for the entire application */
+
+/* Reset some default styles to ensure consistent rendering across browsers */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a basic styling to the main app container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header nav a:hover {
+  background-color: #555;
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Apply custom styles to other elements as needed */

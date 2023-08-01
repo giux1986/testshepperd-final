@@ -1,0 +1,25 @@
+<h1>Product List</h1>
+
+<!-- Filter Input -->
+<div class="filter-container">
+  <input
+    type="text"
+    [(ngModel)]="filterText"
+    (keyup)="applyFilter()"
+    placeholder="Filter by name"
+  />
+  <button (click)="resetFilter()">Clear</button>
+</div>
+<div>
+  <button (click)="changeSortKey('name')">Sort by Name</button>
+  <button (click)="changeSortKey('price')">Sort by Price</button>
+  <button (click)="toggleSortDirection()">Toggle Sort Order ({{ sortDirection }})</button>
+</div>
+<!-- Product List -->
+<ul class="product-list">
+  <li *ngFor="let product of products" class="product-item">
+    <h3 class="product-name">{{ product.name }}</h3>
+    <p class="product-description">Description: {{ product.description }}</p>
+    <p class="product-price">Price: {{ product.price | currency }}</p>
+  </li>
+</ul>
